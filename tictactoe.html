@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>TICTACTOE</title>
+<style>
+.className {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left:48%;
+	top:40%;
+	margin:-100px 0 0 -100px;
+}
+
+.rows{
+	width:90%;
+	height:30%;
+	padding:2px;
+	margin:2px;
+}
+
+.cell {
+	width:30%;
+	height:100%;
+	float:left;
+	background-color:#AFEEEE;
+	margin:2px;
+	padding:2px;
+}	
+</style>
+<script src="tictactoe.js"> </script>
+</head>
+<body>
+
+<center><h1>TIC TAC TOE</h1></center>
+
+<div class="className">
+	<div class="rows">
+		<div id="00" class="cell" onclick="isGameWonOrDraw(0,0)"></div>
+		<div id="01" class="cell" onclick="isGameWonOrDraw(0,1)"></div>
+		<div id="02" class="cell" onclick="isGameWonOrDraw(0,2)"></div>
+	</div>
+	<div class="rows">
+		<div id="10" class="cell" onclick="isGameWonOrDraw(1,0)"></div>
+		<div id="11" class="cell" onclick="isGameWonOrDraw(1,1)"></div>
+		<div id="12" class="cell" onclick="isGameWonOrDraw(1,2)"></div>
+	</div>
+	<div class="rows">
+		<div id="20" class="cell" onclick="isGameWonOrDraw(2,0)"></div>
+		<div id="21" class="cell" onclick="isGameWonOrDraw(2,1)"></div>
+		<div id="22" class="cell" onclick="isGameWonOrDraw(2,2)"></div>
+	</div>
+</div>
+
+</body>
+</html>
